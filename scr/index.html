@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/xel/themes/material.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="node_modules/xel/xel.min.js"></script>
+    
+  </head>
+  <body>
+        <x-box id="container">
+                <header id="sidebar-header">
+                        <x-button id="MenuButton">
+                                <x-icon name="menu"></x-icon>
+                                <dialog>
+                                        <sidebar id="sidebar">
+                                                                                 
+                                                <nav id="nav">
+                                                    <h3>Menu:</h3>
+                                                  <section>
+                                                    <x-button value="general" skin="nav" role="button" aria-disabled="false" tabindex="0" toggled="">
+                                                            <x-icon name="mail"></x-icon>
+                                                      <x-label>Parametres</x-label>
+                                                    </x-button>
+                                          
+                                                    <x-button value="ui" skin="nav" role="button" aria-disabled="false" tabindex="0">
+                                                            <x-icon name="https"></x-icon>
+                                                      <x-label>Information Légal</x-label>
+                                                    </x-button>
+                                          
+                                                    <x-button value="keyboard" skin="nav" role="button" aria-disabled="false" tabindex="0">
+                                                            <x-icon name="info"></x-icon>
+                                                      <x-label>A propos</x-label>
+                                                    </x-button>
+                                                  </section>
+                                          
+                                                  <hr>
+                                          
+                                                  <section>
+                                                    <span>Copyright 2019 - 2099 LOL</span>
+                                                  </section>
+                                                </nav>
+                                              </sidebar>
+                                </dialog>
+                        </x-button>
+                        <style>
+                                dialog {
+                                  width: 250px;
+                                  height: 100%;
+                                  right: 0;
+                                  left: auto;
+                                }
+                                #MenuButton{
+                                  position: fixed;
+                                  right: 0;
+                                  top:0;
+                                }
+                                main{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                        </style>
+                </header>  
+
+                <x-box id="side">
+                  <main id="sidemain">
+                        <x-card>
+                                <header>
+                                  <h3>17:50</h3>
+                                </header>
+                              
+                                <main>
+                                  <p>Lundi 7 janvier 2019</p>
+                                </main>
+                              </x-card>
+                              <x-card>
+                                  <header>
+                                    <h3>Calendrier</h3>
+                                  </header>
+                                
+                                  <main>
+                                    <p>Voir avec api google</p>
+                                  </main>
+                                </x-card>
+                        <x-card>
+                            <header>
+                              <h3>Evenements</h3>
+                            </header>
+                          
+                            <main>
+                              <p>Voir avec api google</p>
+                            </main>
+                          </x-card>
+                </main>
+
+                </x-box>
+            
+                <main id="main">
+                    <x-card>
+                        <header>
+                          <h3>NEWS</h3>
+                          <x-button>
+                              <x-label>Rafraichire</x-label>
+                            </x-button>
+                        </header>
+                      
+                        <main>
+                          <p>Voir avec api google</p>
+                        </main>
+                      </x-card>
+                </main>
+        </x-box>
+  </body>
+</html>

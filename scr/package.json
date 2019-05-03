@@ -1,0 +1,28 @@
+{
+  "name": "betabletos",
+  "version": "0.0.1",
+  "description": "BetabletOS est l'application principale de la Betablet.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nico-remi/BetabletOS.git"
+  },
+  "keywords": [
+    "electronJS"
+  ],
+  "author": "nico & remi",
+  "license": "WTFPL",
+  "dependencies": {
+    "connect": "^3.6.6",
+    "electron": "3.0.13",
+    "serve-static": "^1.13.2",
+    "xel": "0.0.199"
+  },
+  "bugs": {
+    "url": "https://github.com/nico-remi/BetabletOS/issues"
+  },
+  "homepage": "https://github.com/nico-remi/BetabletOS#readme"
+}
